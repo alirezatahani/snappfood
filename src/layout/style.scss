@@ -1,0 +1,31 @@
+.wrapper {
+  overflow: hidden;
+  max-height: 100vh;
+
+  .nav {
+    height: 6vh;
+    max-height: 6vh;
+    ul {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100%;
+      gap: 24px;
+
+      li {
+        list-style: none;
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .contentWrapper {
+    overflow: scroll;
+    padding: 16px;
+    height: calc(94vh - 32px);
+    max-height: calc(94vh - 32px);
+  }
+}

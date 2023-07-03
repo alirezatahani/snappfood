@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'iransans';
+  font-style: normal;
+  font-weight: bold;
+  src: url('https://cdn.snappfood.ir/pwa/assets/fonts/woff2/IRANSansWeb_Bold.woff2')
+      format('woff2'),
+    url('https://cdn.snappfood.ir/pwa/assets/fonts/woff1/IRANSansWeb_Bold.woff')
+      format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'iransans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('https://cdn.snappfood.ir/pwa/assets/fonts/woff2/IRANSansWeb_Medium.woff2')
+      format('woff2'),
+    url('https://cdn.snappfood.ir/pwa/assets/fonts/woff1/IRANSansWeb_Medium.woff')
+      format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'iransans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('https://cdn.snappfood.ir/pwa/assets/fonts/woff2/IRANSansWeb_Light.woff2')
+      format('woff2'),
+    url('https://cdn.snappfood.ir/pwa/assets/fonts/woff1/IRANSansWeb_Light.woff')
+      format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'iransans';
+  font-style: normal;
+  font-weight: normal;
+  src: url('https://cdn.snappfood.ir/pwa/assets/fonts/woff2/IRANSansWeb.woff2')
+      format('woff2'),
+    url('https://cdn.snappfood.ir/pwa/assets/fonts/woff1/IRANSansWeb.woff')
+      format('woff');
+  font-display: swap;
+}

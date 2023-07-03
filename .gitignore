@@ -1,0 +1,13 @@
+\.npmrc
+\.eslintrc
+.idea
+*.log
+.DS_Store
+.env.local
+node_modules
+package-lock.json
+lib/utils/
+fxcomponents/
+.idea
+.yarn
+.yarnrc

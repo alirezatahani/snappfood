@@ -1,0 +1,14 @@
+.viewportBlock {
+  color: #a3a3a3;
+  margin-left: 4px;
+  font-size: 18px;
+  font-weight: 400;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > span {
+    margin-right: 8px;
+  }
+}

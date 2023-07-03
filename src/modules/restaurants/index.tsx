@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { VirtualizedList } from '@components/virtualList';
+import { VirtualizedList } from '../../components/virtualList';
 import { useAppSelector, useAppDispatch } from '../../hooks/redux';
 import { fetchRestaurants, fetchMore } from './redux';
 import { VendorCard } from '../../components/vendorCard';

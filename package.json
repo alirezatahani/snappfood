@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node scripts/start.js",
+    "build": "node scripts/build.js",
     "depcruise:validate": "depcruise src --include-only '^src' --config --output-type err-long",
     "depcruise:tree": "depcruise src --include-only '^src' --config --output-type dot | dot -T svg > dependency-graph.svg && open dependency-graph.svg"
   },
@@ -18,8 +18,9 @@
   "bugs": {
     "url": "https://github.com/alirezatahani/binance-websocket-test/issues"
   },
-  "homepage": "https://github.com/alirezatahani/binance-websocket-test#readme",
+  "homepage": "/",
   "devDependencies": {
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.10",
     "@reduxjs/toolkit": "^1.9.5",
     "@types/lodash": "^4.14.195",
     "@types/node": "^20.2.5",
@@ -28,21 +29,35 @@
     "@types/react-virtualized": "^9.21.22",
     "@types/redux-saga": "^0.10.5",
     "babel-loader": "^9.1.2",
+    "babel-preset-react-app": "^10.0.1",
+    "case-sensitive-paths-webpack-plugin": "^2.4.0",
     "css-loader": "^6.7.1",
+    "css-minimizer-webpack-plugin": "^5.0.1",
     "dependency-cruiser": "^13.0.5",
+    "dotenv-expand": "^10.0.0",
+    "eslint-webpack-plugin": "^4.0.1",
     "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.6",
+    "react-dev-utils": "^12.0.1",
     "react-redux": "^8.1.1",
+    "react-refresh": "^0.14.0",
+    "react-refresh-webpack-plugin": "^0.1.0",
     "redux": "^4.2.1",
     "redux-saga": "^1.2.3",
+    "resolve-url-loader": "^5.0.0",
     "sass": "^1.63.6",
     "sass-loader": "^13.3.2",
+    "source-map-loader": "^4.0.1",
     "style-loader": "^3.3.1",
+    "terser-webpack-plugin": "^5.3.9",
     "ts-loader": "^9.3.0",
     "tsconfig-paths-webpack-plugin": "^3.5.2",
     "typescript": "^4.6.4",
     "webpack": "^5.88.1",
     "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.9.0"
+    "webpack-dev-server": "^4.9.0",
+    "webpack-manifest-plugin": "^5.0.0",
+    "workbox-webpack-plugin": "^7.0.0"
   },
   "dependencies": {
     "axios": "^1.4.0",
@@ -54,5 +69,17 @@
     "react-in-viewport": "^1.0.0-alpha.30",
     "react-router-dom": "^6.14.1",
     "react-virtualized": "^9.22.5"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

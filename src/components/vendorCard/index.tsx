@@ -9,6 +9,10 @@ export const VendorCard = ({ data }: any) => {
       <VendorCardHeader
         backgroundImageCustom={data?.backgroundImageCustom}
         logo={data?.logo}
+        bestCoupon={data?.best_coupon}
+        couponCount={data?.coupon_count}
+        hasCashback={data?.has_cashback}
+        isPro={data?.is_pro}
       />
       <VendorCardContent data={data} />
     </section>
